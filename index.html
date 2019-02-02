@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="my-div">
+    <p id="p-tag">Hey I'm div!</p>
+    <p class="p-1">paragraph 1</p>
+    <p class="p-1">paragraph 2</p>
+    <p>paragraph 3</p>
+  </div>
+
+  <div>
+    <button id="greet-button">Click Me!</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+    var $button = $('#greet-button');
+    
+    $button.dblclick(function() {
+      var $ps = $('.p-1');
+
+      $ps.each(function() {
+        $(this).html('FOO BAR BAZ!!!!');
+      });
+
+    });
+
+  </script>
+</body>
+</html>

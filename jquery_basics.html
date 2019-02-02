@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="./jquery_basics.css">
+  <title>All the jQuery You Need to Know</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Kickstagram</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="jumbotron">
+              <h1>Kickstagram</h1>
+              <p>A place to blog about sneakers if you have nothing better to do.</p>
+
+              <input type="text" class="form-control" id="subscribe-input" type="email" placeholder="Enter your email">
+              <button type="button" class="btn btn-primary" id="subscribe-button">Subscribe</button>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="https://api.jquery.com">jQuery Docs</a></li>
+          <li><a href="https://code.jquery.com">jQuery CDN</a></li>
+          <li><a href="https://oscarotero.com/jquery/">jQuery Cheat Sheet</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="post">
+          <h4>Sample Post</h4>
+          <h5>Subheader</h5>
+          <img class="img-fluid" src="https://sneakernews.com/wp-content/uploads/2018/02/air-jordan-3-jth-giveaway.jpg?w=780&h=550&crop=1" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga, quasi consectetur quibusdam aut neque minima. Veritatis, error et! A beatae recusandae suscipit optio ad quos odit corporis ea veniam?
+          Voluptates ipsum ex eaque quas architecto aut eos sapiente deleniti recusandae incidunt tenetur voluptatum nihil laboriosam sunt optio dicta porro saepe deserunt provident quibusdam, inventore quaerat? Tempora veniam itaque dignissimos.
+          Sunt veritatis inventore in dolore vero iusto similique rerum magnam perspiciatis porro, ratione eos deserunt, quasi quas neque ut laudantium aliquam impedit quo! Aliquid quod, consequuntur assumenda dolorum minus accusamus.
+          Temporibus enim velit corrupti molestiae modi eius tenetur, porro similique est mollitia ipsum obcaecati assumenda numquam repellendus, optio consectetur expedita quaerat debitis dolores id nobis eligendi iure repellat. Dolores, laborum?
+          Libero deleniti odio quo officiis at, quos iure aliquam, saepe quia possimus expedita totam temporibus quibusdam. Deleniti enim nihil, minus ab fuga placeat dolore distinctio dignissimos, maxime eum facilis saepe!
+          Delectus fuga quia incidunt tenetur corrupti labore, nam autem odio numquam dolorem sapiente soluta veniam! Itaque expedita similique, magni facere excepturi eius consequuntur molestias incidunt perferendis corrupti iusto cumque totam.
+          Quasi dolor fuga quas tempore est ea recusandae esse? Natus deleniti, eum, dolor quia ullam blanditiis aliquam, quasi non id enim esse rem? Rem autem praesentium ratione dolorum cupiditate atque?
+          Saepe neque doloremque excepturi. Minima optio deserunt illum officiis nobis quasi exercitationem repudiandae porro asperiores. Doloribus tenetur, ipsum aperiam distinctio nobis officiis perspiciatis magni, quod sapiente dolores soluta ipsa qui.
+          Illo quia nesciunt tempore excepturi fuga ipsam earum repellat mollitia, dolor soluta cupiditate sed fugit officiis harum neque maxime voluptatem veritatis ducimus temporibus rem nostrum laborum voluptatibus. Porro, hic repellat.
+          Officia repudiandae dolore deserunt ducimus et ab similique earum aliquid? Iusto adipisci sed natus cupiditate corporis magni. A quidem animi, dolore porro voluptate quas rem eveniet nisi vitae perspiciatis dolor.</p>
+          <a href="http://sneakernews.com">Read more...</a>
+        </div>
+        <div class="post">
+            <h4>Sample Post</h4>
+            <h5>Subheader</h5>
+            <img class="img-fluid" src="https://sneakernews.com/wp-content/uploads/2018/11/air-jordan-11-concord-store-list-1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga, quasi consectetur quibusdam aut neque minima. Veritatis, error et! A beatae recusandae suscipit optio ad quos odit corporis ea veniam?
+            Voluptates ipsum ex eaque quas architecto aut eos sapiente deleniti recusandae incidunt tenetur voluptatum nihil laboriosam sunt optio dicta porro saepe deserunt provident quibusdam, inventore quaerat? Tempora veniam itaque dignissimos.
+            Sunt veritatis inventore in dolore vero iusto similique rerum magnam perspiciatis porro, ratione eos deserunt, quasi quas neque ut laudantium aliquam impedit quo! Aliquid quod, consequuntur assumenda dolorum minus accusamus.
+            Temporibus enim velit corrupti molestiae modi eius tenetur, porro similique est mollitia ipsum obcaecati assumenda numquam repellendus, optio consectetur expedita quaerat debitis dolores id nobis eligendi iure repellat. Dolores, laborum?
+            Libero deleniti odio quo officiis at, quos iure aliquam, saepe quia possimus expedita totam temporibus quibusdam. Deleniti enim nihil, minus ab fuga placeat dolore distinctio dignissimos, maxime eum facilis saepe!
+            Delectus fuga quia incidunt tenetur corrupti labore, nam autem odio numquam dolorem sapiente soluta veniam! Itaque expedita similique, magni facere excepturi eius consequuntur molestias incidunt perferendis corrupti iusto cumque totam.
+            Quasi dolor fuga quas tempore est ea recusandae esse? Natus deleniti, eum, dolor quia ullam blanditiis aliquam, quasi non id enim esse rem? Rem autem praesentium ratione dolorum cupiditate atque?
+            Saepe neque doloremque excepturi. Minima optio deserunt illum officiis nobis quasi exercitationem repudiandae porro asperiores. Doloribus tenetur, ipsum aperiam distinctio nobis officiis perspiciatis magni, quod sapiente dolores soluta ipsa qui.
+            Illo quia nesciunt tempore excepturi fuga ipsam earum repellat mollitia, dolor soluta cupiditate sed fugit officiis harum neque maxime voluptatem veritatis ducimus temporibus rem nostrum laborum voluptatibus. Porro, hic repellat.
+            Officia repudiandae dolore deserunt ducimus et ab similique earum aliquid? Iusto adipisci sed natus cupiditate corporis magni. A quidem animi, dolore porro voluptate quas rem eveniet nisi vitae perspiciatis dolor.</p>
+            <a href="http://sneakernews.com">Read more...</a>
+        </div>
+        <div class="post">
+            <h4>Sample Post</h4>
+            <h5>Subheader</h5>
+            <img class="img-fluid" src="https://sneakernews.com/wp-content/uploads/2018/12/air-jordan-11-bred-2019.jpg?w=780&h=547&crop=1" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga, quasi consectetur quibusdam aut neque minima. Veritatis, error et! A beatae recusandae suscipit optio ad quos odit corporis ea veniam?
+            Voluptates ipsum ex eaque quas architecto aut eos sapiente deleniti recusandae incidunt tenetur voluptatum nihil laboriosam sunt optio dicta porro saepe deserunt provident quibusdam, inventore quaerat? Tempora veniam itaque dignissimos.
+            Sunt veritatis inventore in dolore vero iusto similique rerum magnam perspiciatis porro, ratione eos deserunt, quasi quas neque ut laudantium aliquam impedit quo! Aliquid quod, consequuntur assumenda dolorum minus accusamus.
+            Temporibus enim velit corrupti molestiae modi eius tenetur, porro similique est mollitia ipsum obcaecati assumenda numquam repellendus, optio consectetur expedita quaerat debitis dolores id nobis eligendi iure repellat. Dolores, laborum?
+            Libero deleniti odio quo officiis at, quos iure aliquam, saepe quia possimus expedita totam temporibus quibusdam. Deleniti enim nihil, minus ab fuga placeat dolore distinctio dignissimos, maxime eum facilis saepe!
+            Delectus fuga quia incidunt tenetur corrupti labore, nam autem odio numquam dolorem sapiente soluta veniam! Itaque expedita similique, magni facere excepturi eius consequuntur molestias incidunt perferendis corrupti iusto cumque totam.
+            Quasi dolor fuga quas tempore est ea recusandae esse? Natus deleniti, eum, dolor quia ullam blanditiis aliquam, quasi non id enim esse rem? Rem autem praesentium ratione dolorum cupiditate atque?
+            Saepe neque doloremque excepturi. Minima optio deserunt illum officiis nobis quasi exercitationem repudiandae porro asperiores. Doloribus tenetur, ipsum aperiam distinctio nobis officiis perspiciatis magni, quod sapiente dolores soluta ipsa qui.
+            Illo quia nesciunt tempore excepturi fuga ipsam earum repellat mollitia, dolor soluta cupiditate sed fugit officiis harum neque maxime voluptatem veritatis ducimus temporibus rem nostrum laborum voluptatibus. Porro, hic repellat.
+            Officia repudiandae dolore deserunt ducimus et ab similique earum aliquid? Iusto adipisci sed natus cupiditate corporis magni. A quidem animi, dolore porro voluptate quas rem eveniet nisi vitae perspiciatis dolor.</p>
+            <a href="http://sneakernews.com">Read more...</a>
+        </div>
+      </div>
+      <div class="col-md-3 sidebar">
+        <h3>Latest News</h3>
+        <ul>
+          <li>Story 1</li>
+          <li>Story 2</li>
+          <li>Story 3</li>
+          <li>Story 4</li>
+          <li>Story 5</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="./jquery_basics.js"></script>
+</body>
+</html>
